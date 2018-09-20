@@ -1,46 +1,46 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="styleExo7.css">
-    <title>Exercice 7</title>
-  </head>
-  <body>
-    <form method="post">
-      <fieldset id="Bleu">
-        <legend id="Bleu">Votre identité</legend>
-        <p>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="styleExo7.css">
+  <title>Exercice 7</title>
+</head>
+<body>
+  <form method="post">
+    <fieldset id="Bleu">
+      <legend id="Bleu">Votre identité</legend>
+      <p>
         <ol>
           <li><label for="Nom">Nom</label> : <input type="text" name="Nom" placeholder="Nom" id="Nom"/></li>
           <li><label for="Prénom">Prénom</label> : <input type="text" name="Prénom" placeholder="Prénom" id="Prénom"/></li>
           <li><label for="email">Adresse mail</label> : <input type="email" name="email" placeholder="Adresse mail" id="email"/></li>
         </ol>
-       </p>
-     </fieldset>
-     <fieldset id="Violet">
-     <legend id="Violet">Adresse de livraison</legend>
+      </p>
+    </fieldset>
+    <fieldset id="Violet">
+      <legend id="Violet">Adresse de livraison</legend>
       <p>
         <ol>
           <li><label for="Adresse">Adresse</label> : <textarea name="Adresse" id="Adresse" rows="5"></textarea></li>
-          <li><label for="CP">Code postal</label> : <input type="text" name="CP" placeholder="Code postal" id="CP"/></li>
+          <li><label for="CP">Code postal</label> : <input type="number" name="CP" placeholder="Code postal" id="CP"/></li>
           <li><label for="Ville">Ville</label> : <input type="text" name="Ville" placeholder="Ville" id="Ville"/></li>
         </ol>
       </p>
-     </fieldset>
-     <fieldset id="Rose">
-       <legend id="Rose">Information de réglement</legend>
+    </fieldset>
+    <fieldset id="Rose">
+      <legend id="Rose">Information de réglement</legend>
       <p>
         <ol>
           <li>Type de carte bancaire</br>
             <ul><input type="radio" name="CB" value="VISA" id="VISA" /><label for="VISA">VISA</label></ul>
             <ul><input type="radio" name="CB" value="Mastercard" id="Mastercard"/><label for="Mastercard">Mastercard</label></ul></li>
-          <li><label for="NDC">Numéro de carte</label> : <input type="text" name="NDC" placeholder="Numéro de carte" id="NDC"/></li>
-          <li><label for="CDS">Code de sécurité</label> : <input type="text" name="CDS" placeholder="Code de sécurité" maxlength="3" id="CDS"/></li>
-          <li><label for="NDT">Nom du titulaire</label> : <input type="text" name="NDT" placeholder="Nom du titulaire" id="NDT"/></li>
-        </ol>
-      </p>
-    </fieldset>
-    <input type="submit" value="J'achète"/>
+            <li><label for="NDC">Numéro de carte</label> : <input type="number" name="NDC" placeholder="Numéro de carte" id="NDC"/></li>
+            <li><label for="CDS">Code de sécurité</label> : <input type="number" name="CDS" placeholder="Code de sécurité" id="CDS"/></li>
+            <li><label for="NDT">Nom du titulaire</label> : <input type="text" name="NDT" placeholder="Nom du titulaire" id="NDT"/></li>
+          </ol>
+        </p>
+      </fieldset>
+      <input type="submit" value="J'achète"/>
     </form>
   </body>
-</html>
+  </html>
